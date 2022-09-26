@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		2D5672F828E22D2100A4B2BA /* Nationalize_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5672F728E22D2100A4B2BA /* Nationalize_AppApp.swift */; };
-		2D5672FA28E22D2100A4B2BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5672F928E22D2100A4B2BA /* ContentView.swift */; };
 		2D5672FC28E22D2500A4B2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5672FB28E22D2500A4B2BA /* Assets.xcassets */; };
 		2D5672FF28E22D2500A4B2BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5672FE28E22D2500A4B2BA /* Preview Assets.xcassets */; };
+		2D56731228E22E2200A4B2BA /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56730928E22E2100A4B2BA /* DataSet.swift */; };
+		2D56731328E22E2200A4B2BA /* Nationality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56730A28E22E2100A4B2BA /* Nationality.swift */; };
+		2D56731428E22E2200A4B2BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D56730C28E22E2200A4B2BA /* Launch Screen.storyboard */; };
+		2D56731528E22E2200A4B2BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56730D28E22E2200A4B2BA /* ContentView.swift */; };
+		2D56731628E22E2200A4B2BA /* CountryMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56730E28E22E2200A4B2BA /* CountryMapView.swift */; };
+		2D56731728E22E2200A4B2BA /* NationalityVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56731028E22E2200A4B2BA /* NationalityVM.swift */; };
+		2D56731828E22E2200A4B2BA /* MapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D56731128E22E2200A4B2BA /* MapVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D5672F428E22D2100A4B2BA /* Nationalize App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nationalize App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5672F728E22D2100A4B2BA /* Nationalize_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nationalize_AppApp.swift; sourceTree = "<group>"; };
-		2D5672F928E22D2100A4B2BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D5672FB28E22D2500A4B2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D5672FE28E22D2500A4B2BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D56730928E22E2100A4B2BA /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		2D56730A28E22E2100A4B2BA /* Nationality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nationality.swift; sourceTree = "<group>"; };
+		2D56730C28E22E2200A4B2BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2D56730D28E22E2200A4B2BA /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2D56730E28E22E2200A4B2BA /* CountryMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryMapView.swift; sourceTree = "<group>"; };
+		2D56731028E22E2200A4B2BA /* NationalityVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NationalityVM.swift; sourceTree = "<group>"; };
+		2D56731128E22E2200A4B2BA /* MapVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		2D5672F628E22D2100A4B2BA /* Nationalize App */ = {
 			isa = PBXGroup;
 			children = (
+				2D56730828E22E2100A4B2BA /* Model */,
+				2D56730B28E22E2200A4B2BA /* View */,
+				2D56730F28E22E2200A4B2BA /* ViewModel */,
 				2D5672F728E22D2100A4B2BA /* Nationalize_AppApp.swift */,
-				2D5672F928E22D2100A4B2BA /* ContentView.swift */,
 				2D5672FB28E22D2500A4B2BA /* Assets.xcassets */,
 				2D5672FD28E22D2500A4B2BA /* Preview Content */,
 			);
@@ -65,6 +79,34 @@
 				2D5672FE28E22D2500A4B2BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D56730828E22E2100A4B2BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D56730928E22E2100A4B2BA /* DataSet.swift */,
+				2D56730A28E22E2100A4B2BA /* Nationality.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2D56730B28E22E2200A4B2BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D56730C28E22E2200A4B2BA /* Launch Screen.storyboard */,
+				2D56730D28E22E2200A4B2BA /* ContentView.swift */,
+				2D56730E28E22E2200A4B2BA /* CountryMapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D56730F28E22E2200A4B2BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2D56731028E22E2200A4B2BA /* NationalityVM.swift */,
+				2D56731128E22E2200A4B2BA /* MapVM.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D56731428E22E2200A4B2BA /* Launch Screen.storyboard in Resources */,
 				2D5672FF28E22D2500A4B2BA /* Preview Assets.xcassets in Resources */,
 				2D5672FC28E22D2500A4B2BA /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +180,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D5672FA28E22D2100A4B2BA /* ContentView.swift in Sources */,
+				2D56731328E22E2200A4B2BA /* Nationality.swift in Sources */,
+				2D56731528E22E2200A4B2BA /* ContentView.swift in Sources */,
+				2D56731728E22E2200A4B2BA /* NationalityVM.swift in Sources */,
+				2D56731628E22E2200A4B2BA /* CountryMapView.swift in Sources */,
+				2D56731228E22E2200A4B2BA /* DataSet.swift in Sources */,
 				2D5672F828E22D2100A4B2BA /* Nationalize_AppApp.swift in Sources */,
+				2D56731828E22E2200A4B2BA /* MapVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,6 +353,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
